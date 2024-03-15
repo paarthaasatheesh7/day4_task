@@ -1,0 +1,60 @@
+const resume={
+    name:"Paarthasaarathi S R",
+    title:"Fullstack Developer",
+    contact:{
+        email:"paarthasatheesh7@gmail.com",
+        phone:8072570541,
+        address:"2/7B, Sri Ram Nagar, Uthangudi, Madurai-625107",
+    },
+    summary:"Experienced full-stack developer with a strong background in both front-end and back-end development. Proficient in a variety of programming languages, frameworks, and technologies. Skilled in designing and building scalable web applications from concept to deployment. Passionate about staying up-to-date with the latest industry trends and technologies.",
+
+    skills:{
+        frontEnd:"HTML 5, CSS 3, JavaScript, React JS, Angular JS, Vue JS",
+        backEnd:"Node JS, Express JS, Django",
+        databases:"MongoDB, MySQL",
+        devops:"AWS, Azure",
+        other:"RESTful API's, RWD", 
+    },
+
+    education:{
+        degree:"Bachelor of Business Administration",
+        university:"Madras University",
+        graduated:"May 2023",
+    },
+
+    certifications:"AWS Certified Solutions Architect - Associate, Google Cloud Platform Professional Cloud Developer", 
+    
+
+    projects:"Developed a full-stack e-commerce website using React.js, Node.js, and MongoDB. Implemented user authentication, product catalog, and payment processing features.",
+    
+    languangesKnown:"English, Tamil",
+
+       
+};
+const jsonData = JSON.stringify(resume);
+console.log(jsonData);
+
+
+// Iteration for over all loops:
+// for each loop:
+
+resume.education.forEach(education => {
+    console.log(`Education: ${education.degree} in ${education.graduated} from ${education.university}`);
+  });
+  
+  resume.skills.forEach(skills => {
+    console.log(`Frontend skills: ${skills.frontEnd} and backend skills: ${skills.backEnd}`);
+  });
+
+
+//   for of loop
+for (let education of resume.education) {
+    console.log(`Education: ${education.degree} graduated on ${education.graduated} from ${education.university}`);
+  }
+  
+  for (let skills of resume.skills) {
+    console.log(`Frontend skills: ${skills.frontEnd} and backend skills: ${skills.backEnd}`);
+  }
+  
+
+//   for in loop
